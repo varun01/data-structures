@@ -1,4 +1,4 @@
-package com.learning.datastructures.arrays;
+package com.learning.leetcodeproblems;
 
 public class ReverseCharArray {
 
