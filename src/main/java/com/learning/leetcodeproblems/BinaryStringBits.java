@@ -1,5 +1,11 @@
 package com.learning.leetcodeproblems;
-
+/*
+    Print binary strings with n bits.
+    Example: 0 0
+             0 1
+             1 0
+             1 1
+ */
 public class BinaryStringBits {
 
     public static void main(String[] args) {
@@ -10,7 +16,7 @@ public class BinaryStringBits {
 
     public static void bitsGenerator(int bitLength, int num, int[] bits){
 
-        if(bitLength == num){
+        if(bitLength == num){ // Base condition to break the recursion.
             for(int i = 0 ; i < bits.length; i++)
                 System.out.print(bits[i]+"\t");
             num = 0;
