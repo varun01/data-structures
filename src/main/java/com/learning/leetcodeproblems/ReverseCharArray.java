@@ -20,4 +20,15 @@ public class ReverseCharArray {
         }
 
     }
+
+    public static String reverseWord(String str){
+        String words[]=str.split("\\s");
+        String reverseWord="";
+        for(int i = 0; i< words.length; i++){
+            StringBuilder sb=new StringBuilder(words[i]);
+            sb.reverse();
+            reverseWord = reverseWord.concat(sb.toString()+" ");
+        }
+        return reverseWord.trim();
+    }
 }
